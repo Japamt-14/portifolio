@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfólio de Enzo Pereira, estudante de Desenvolvimento Full Stack, com projetos, estudos e habilidades em programação.">
+    <meta name="author" content="Enzo Pereira">
+    <meta name="theme-color" content="#f8f7f4">
+
+    <title>Enzo Pereira | Desenvolvedor em Formação</title>
+
+    <!-- Fonte moderna do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícone da aba do navegador -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23d94343'/%3E%3Ctext x='50' y='65' font-size='48' text-anchor='middle' fill='white' font-family='Arial'%3EEP%3C/text%3E%3C/svg%3E">
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Cabeçalho e navegação principal -->
+    <header class="cabecalho" id="inicio">
+        <nav class="navegacao conteiner" aria-label="Navegação principal">
+
+            <a href="#inicio" class="logotipo" aria-label="Enzo Pereira, início">
+                <span class="logotipo-simbolo">E<span>P</span></span>
+                <span class="logotipo-texto">ENZO PEREIRA<span class="logotipo-ponto">.</span></span>
+            </a>
+
+            <!-- Botão do menu para celulares -->
+            <button
+                class="botao-menu"
+                id="botao-menu"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="lista-navegacao"
+                type="button">
+                <i class="bi bi-list" aria-hidden="true"></i>
+            </button>
+
+            <ul class="lista-navegacao" id="lista-navegacao">
+                <li><a href="#sobre" class="link-navegacao">Sobre</a></li>
+                <li><a href="#habilidades" class="link-navegacao">Habilidades</a></li>
+                <li><a href="#formacao" class="link-navegacao">Formação</a></li>
+                <li><a href="#projetos" class="link-navegacao">Projetos</a></li>
+                <li><a href="#contato" class="link-navegacao">Contato</a></li>
+                <li>
+                    <button
+                        class="botao-tema"
+                        id="botao-tema"
+                        type="button"
+                        aria-label="Ativar tema escuro"
+                        title="Alternar tema">
+                        <i class="bi bi-moon-stars" aria-hidden="true"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Apresentação principal -->
+        <section class="secao-heroi conteiner" aria-labelledby="titulo-principal">
+            <div class="heroi-conteudo">
+                <div class="etiqueta-disponibilidade">
+                    <span class="indicador-status"></span>
+                    ESTUDANTE DE TECNOLOGIA
+                </div>
+
+                <p class="heroi-introducao">Olá, meu nome é</p>
+
+                <h1 id="titulo-principal">
+                    Enzo Pereira<span class="texto-destaque">.</span>
+                </h1>
+
+                <h2 class="heroi-subtitulo">
+                    Construindo meu caminho em
+                    <span class="texto-digitacao" id="texto-digitacao">Desenvolvimento Web</span><span class="cursor-digitacao" aria-hidden="true">|</span>
+                </h2>
+
+                <p class="heroi-descricao">
+                    Sou estudante de Informática para Internet e apaixonado por programação.
+                    Transformo aprendizado em projetos, ideias em interfaces e desafios em
+                    oportunidades para evoluir como desenvolvedor.
+                </p>
+
+                <div class="heroi-acoes">
+                    <a href="curriculo.pdf.pdf" class="botao botao-principal" download>
+                        <i class="bi bi-download" aria-hidden="true"></i>
+                        Baixar meu CV
+                    </a>
+
+                    <a href="#projetos" class="botao botao-secundario">
+                        Explorar projetos
+                        <i class="bi bi-arrow-down-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="heroi-redes" aria-label="Redes sociais">
+                    <a href="https://github.com/Japamt-14" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Enzo Pereira">
+                        <i class="bi bi-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:enzopereira1014@gmail.com" aria-label="Enviar e-mail para Enzo Pereira">
+                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                    </a>
+                    <span class="linha-decorativa"></span>
+                    <span class="texto-rede">Conecte-se comigo</span>
+                </div>
+            </div>
+
+            <!-- Elemento visual inspirado no design japonês -->
+            <div class="heroi-visual" aria-label="Elemento gráfico decorativo">
+                <div class="visual-grade"></div>
+                <div class="visual-circulo visual-circulo-externo"></div>
+                <div class="visual-circulo visual-circulo-interno"></div>
+
+                <div class="visual-sol"></div>
+
+                <div class="visual-monograma">
+                    <span>E</span>
+                    <span class="monograma-divisor"></span>
+                    <span>P</span>
+                </div>
+
+                <span class="visual-caractere" lang="ja" aria-label="Kaizen, melhoria contínua">改善</span>
+                <span class="visual-legenda">DESENVOLVIMENTO CONTÍNUO</span>
+                <span class="visual-numero">001 — 026</span>
+            </div>
+
+            <a href="#sobre" class="indicador-rolagem" aria-label="Rolar para a seção Sobre">
+                <span></span>
+                ROLE PARA DESCOBRIR
+            </a>
+        </section>
+
+        <!-- Seção sobre mim -->
+        <section class="secao secao-sobre" id="sobre" aria-labelledby="titulo-sobre">
+            <div class="conteiner">
+                <div class="cabecalho-secao animar-entrada">
+                    <span class="numero-secao">01 / SOBRE MIM</span>
+                    <h2 id="titulo-sobre">Curiosidade que vira <span class="texto-destaque">código.</span></h2>
+                </div>
+
+                <div class="sobre-grade">
+                    <div class="sobre-texto animar-entrada">
+                        <p class="texto-introdutor">
+                            Mais do que aprender a programar, quero entender como a tecnologia pode criar soluções.
+                        </p>
+
+                        <p>
+                            Atualmente, curso o 1º ano do Ensino Médio Técnico em Informática para Internet
+                            pela SESC Escola, em parceria com o SENAC. Minha jornada começou pelo
+                            desenvolvimento Front-end, área em que estudo a construção de páginas,
+                            interfaces e experiências para a web.
+                        </p>
+
+                        <p>
+                            Nos próximos anos, pretendo aprofundar meus conhecimentos em Back-end
+                            e desenvolvimento Mobile, ampliando minha visão sobre a criação de aplicações.
+                            Meu objetivo é construir uma base sólida para me tornar um desenvolvedor Full Stack.
+                        </p>
+
+                        <p>
+                            Estou em uma fase de descobertas: quero usar meus estudos e projetos
+                            para conhecer melhor minhas possibilidades profissionais, experimentar
+                            novas tecnologias e decidir, com mais segurança, os próximos passos da minha carreira.
+                        </p>
+                    </div>
+
+                    <div class="sobre-destaques animar-entrada">
+                        <article class="cartao-destaque">
+                            <span class="destaque-icone"><i class="bi bi-code-slash" aria-hidden="true"></i></span>
+                            <div>
+                                <h3>Aprendizado prático</h3>
+                                <p>Transformando os conteúdos das aulas em projetos reais.</p>
+                            </div>
+                        </article>
+
+                        <article class="cartao-destaque">
+                            <span class="destaque-icone"><i class="bi bi-compass" aria-hidden="true"></i></span>
+                            <div>
+                                <h3>Evolução constante</h3>
+                                <p>Explorando novas ferramentas, conceitos e possibilidades.</p>
+                            </div>
+                        </article>
+
+                        <article class="cartao-destaque">
+                            <span class="destaque-icone"><i class="bi bi-lightbulb" aria-hidden="true"></i></span>
+                            <div>
+                                <h3>Mente curiosa</h3>
+                                <p>Aprendendo com erros, experiências e desafios.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de habilidades técnicas -->
+        <section class="secao secao-habilidades" id="habilidades" aria-labelledby="titulo-habilidades">
+            <div class="conteiner">
+                <div class="cabecalho-secao animar-entrada">
+                    <span class="numero-secao">02 / HABILIDADES</span>
+                    <h2 id="titulo-habilidades">Ferramentas do meu <span class="texto-destaque">aprendizado.</span></h2>
+                    <p>As tecnologias e os fundamentos que fazem parte da minha jornada.</p>
+                </div>
+
+                <div class="grade-habilidades">
+                    <article class="cartao-habilidade animar-entrada">
+                        <div class="habilidade-cabecalho">
+                            <i class="bi bi-window" aria-hidden="true"></i>
+                            <span>01</span>
+                        </div>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Estrutura e apresentação de páginas para a internet.</p>
+                        <div class="lista-etiquetas">
+                            <span class="etiqueta">HTML5</span>
+                            <span class="etiqueta">CSS3</span>
+                            <span class="etiqueta">JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="cartao-habilidade animar-entrada">
+                        <div class="habilidade-cabecalho">
+                            <i class="bi bi-cpu" aria-hidden="true"></i>
+                            <span>02</span>
+                        </div>
+                        <h3>Lógica e algoritmos</h3>
+                        <p>Resolução de problemas e construção do raciocínio computacional.</p>
+                        <div class="lista-etiquetas">
+                            <span class="etiqueta">Lógica</span>
+                            <span class="etiqueta">Algoritmos</span>
+                            <span class="etiqueta">Portugol</span>
+                        </div>
+                    </article>
+
+                    <article class="cartao-habilidade animar-entrada">
+                        <div class="habilidade-cabecalho">
+                            <i class="bi bi-git" aria-hidden="true"></i>
+                            <span>03</span>
+                        </div>
+                        <h3>Versionamento</h3>
+                        <p>Organização de código e acompanhamento da evolução dos projetos.</p>
+                        <div class="lista-etiquetas">
+                            <span class="etiqueta">Git</span>
+                            <span class="etiqueta">GitHub</span>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="nota-habilidades animar-entrada">
+                    <i class="bi bi-info-circle" aria-hidden="true"></i>
+                    Estou em formação e continuo desenvolvendo minhas habilidades por meio de estudos e projetos práticos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Formação técnica com trilha de aprendizado -->
+        <section class="secao" id="formacao" aria-labelledby="titulo-formacao">
+            <div class="conteiner">
+                <div class="cabecalho-secao animar-entrada">
+                    <span class="numero-secao">03 / FORMAÇÃO</span>
+                    <h2 id="titulo-formacao">Uma base para ir <span class="texto-destaque">além.</span></h2>
+                </div>
+
+                <article class="cartao-formacao animar-entrada">
+                    <div class="formacao-lateral">
+                        <span class="formacao-simbolo" lang="ja" aria-label="Aprendizado">学</span>
+                        <span class="formacao-lateral-texto">EDUCAÇÃO & TECNOLOGIA</span>
+                    </div>
+
+                    <div class="formacao-conteudo">
+                        <div class="formacao-selo">
+                            <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                            PARCERIA SESC + SENAC
+                        </div>
+
+                        <p class="formacao-tipo">ENSINO MÉDIO INTEGRADO AO TÉCNICO</p>
+
+                        <h3>Informática para Internet</h3>
+
+                        <p class="formacao-instituicao">
+                            SESC Escola <span>×</span> SENAC
+                        </p>
+
+                        <p class="formacao-descricao">
+                            Formação que integra o Ensino Médio ao desenvolvimento de competências
+                            em informática, programação e criação de soluções digitais.
+                        </p>
+
+                        <div class="formacao-informacoes">
+                            <span><i class="bi bi-mortarboard" aria-hidden="true"></i> Ensino Médio Técnico</span>
+                            <span><i class="bi bi-calendar3" aria-hidden="true"></i> Conclusão prevista: 2026</span>
+                        </div>
+
+                        <div class="trilha-titulo">
+                            <h4>Minha trilha de desenvolvimento</h4>
+                            <span>01 — 03</span>
+                        </div>
+
+                        <div class="trilha-progresso">
+                            <div class="trilha-etapa trilha-concluida">
+                                <span class="trilha-marcador"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+                                <div>
+                                    <strong>Front-end</strong>
+                                    <small>Etapa atual de estudos</small>
+                                </div>
+                            </div>
+
+                            <div class="trilha-linha" aria-hidden="true"></div>
+
+                            <div class="trilha-etapa trilha-futura">
+                                <span class="trilha-marcador">02</span>
+                                <div>
+                                    <strong>Back-end</strong>
+                                    <small>Próxima etapa planejada</small>
+                                </div>
+                            </div>
+
+                            <div class="trilha-linha" aria-hidden="true"></div>
+
+                            <div class="trilha-etapa trilha-futura">
+                                <span class="trilha-marcador">03</span>
+                                <div>
+                                    <strong>Mobile</strong>
+                                    <small>Etapa futura planejada</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="formacao-rodape">
+                            <i class="bi bi-stars" aria-hidden="true"></i>
+                            Aprender, praticar e evoluir — um passo de cada vez.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projetos de destaque -->
+        <section class="secao secao-projetos" id="projetos" aria-labelledby="titulo-projetos">
+            <div class="conteiner">
+                <div class="cabecalho-secao animar-entrada">
+                    <span class="numero-secao">04 / PORTFÓLIO</span>
+                    <h2 id="titulo-projetos">Projetos de <span class="texto-destaque">destaque.</span></h2>
+                    <p>Projetos desenvolvidos durante minha jornada de aprendizado.</p>
+                </div>
+
+                <div class="grade-projetos">
+                    <!-- Projeto 1 -->
+                    <article class="cartao-projeto animar-entrada">
+                        <div class="projeto-imagem projeto-imagem-compasso">
+                            <div class="projeto-numero">PROJETO 01</div>
+                            <div class="projeto-ilustracao">
+                                <i class="bi bi-music-note-beamed" aria-hidden="true"></i>
+                                <span class="onda-musical onda-um"></span>
+                                <span class="onda-musical onda-dois"></span>
+                                <span class="onda-musical onda-tres"></span>
+                            </div>
+                            <span class="projeto-categoria">EDUCAÇÃO MUSICAL</span>
+                        </div>
+
+                        <div class="projeto-conteudo">
+                            <div class="projeto-titulo-linha">
+                                <h3>Compasso Musical</h3>
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </div>
+
+                            <p>
+                                Site desenvolvido para apresentar e explorar os conteúdos estudados
+                                sobre música, reunindo os conhecimentos trabalhados durante o aprendizado.
+                            </p>
+
+                            <div class="lista-etiquetas">
+                                <span class="etiqueta">HTML</span>
+                                <span class="etiqueta">CSS</span>
+                            </div>
+
+                            <div class="projeto-acoes">
+                                <a href="https://github.com/Japamt-14/compasso-musical" target="_blank" rel="noopener noreferrer" class="botao-projeto">
+                                    <i class="bi bi-github" aria-hidden="true"></i>
+                                    Repositório
+                                </a>
+                                <a href="https://japamt-14.github.io/compasso-musical/" target="_blank" rel="noopener noreferrer" class="botao-projeto botao-projeto-secundario">
+                                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                                    Ver site
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2 -->
+                    <article class="cartao-projeto animar-entrada">
+                        <div class="projeto-imagem projeto-imagem-robomaker">
+                            <div class="projeto-numero">PROJETO 02</div>
+                            <div class="projeto-ilustracao">
+                                <i class="bi bi-robot" aria-hidden="true"></i>
+                                <span class="brilho-robotico brilho-um"></span>
+                                <span class="brilho-robotico brilho-dois"></span>
+                            </div>
+                            <span class="projeto-categoria">TECNOLOGIA & INOVAÇÃO</span>
+                        </div>
+
+                        <div class="projeto-conteudo">
+                            <div class="projeto-titulo-linha">
+                                <h3>Projeto Robomaker</h3>
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </div>
+
+                            <p>
+                                Projeto web com uma proposta visual própria, desenvolvido para
+                                explorar a criação de páginas e aprimorar meus conhecimentos em HTML e CSS.
+                            </p>
+
+                            <div class="lista-etiquetas">
+                                <span class="etiqueta">HTML</span>
+                            </div>
+
+                            <div class="projeto-acoes">
+                                <a href="https://github.com/Japamt-14/projeto-robomaker-" target="_blank" rel="noopener noreferrer" class="botao-projeto">
+                                    <i class="bi bi-github" aria-hidden="true"></i>
+                                    Repositório
+                                </a>
+                                <a href="https://japamt-14.github.io/projeto-robomaker-/" target="_blank" rel="noopener noreferrer" class="botao-projeto botao-projeto-secundario">
+                                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                                    Ver site
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="aviso-links animar-entrada">
+                    <i class="bi bi-info-circle" aria-hidden="true"></i>
+                    Os endereços 127.0.0.1 são locais e funcionam apenas no computador em que o servidor está executando. Para disponibilizar os projetos publicamente, publique-os no GitHub Pages ou em outro serviço de hospedagem.
+                </p>
+            </div>
+        </section>
+
+        <!-- Repositórios de estudo -->
+        <section class="secao secao-repositorios" id="repositorios" aria-labelledby="titulo-repositorios">
+            <div class="conteiner">
+                <div class="cabecalho-secao animar-entrada">
+                    <span class="numero-secao">05 / APRENDIZADO CONTÍNUO</span>
+                    <h2 id="titulo-repositorios">Repositórios de <span class="texto-destaque">estudo.</span></h2>
+                    <p>Anotações, exercícios e práticas desenvolvidos durante as aulas.</p>
+                </div>
+
+                <div class="lista-repositorios">
+                    <a href="https://github.com/Japamt-14/html" target="_blank" rel="noopener noreferrer" class="item-repositorio animar-entrada">
+                        <div class="repositorio-icone">
+                            <i class="bi bi-filetype-html" aria-hidden="true"></i>
+                        </div>
+                        <div class="repositorio-informacoes">
+                            <h3>Trilha de HTML e CSS</h3>
+                            <p>Estruturação de páginas, estilos e fundamentos do desenvolvimento web.</p>
+                            <div class="lista-etiquetas">
+                                <span class="etiqueta">HTML5</span>
+                                <span class="etiqueta">CSS3</span>
+                            </div>
+                        </div>
+                        <span class="repositorio-link" aria-label="Abrir repositório">
+                            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+
+                    <a href="https://github.com/Japamt-14/JavaScript" target="_blank" rel="noopener noreferrer" class="item-repositorio animar-entrada">
+                        <div class="repositorio-icone">
+                            <i class="bi bi-filetype-js" aria-hidden="true"></i>
+                        </div>
+                        <div class="repositorio-informacoes">
+                            <h3>Trilha de JavaScript Vanilla</h3>
+                            <p>Exercícios de lógica, variáveis, funções e interatividade com JavaScript puro.</p>
+                            <div class="lista-etiquetas">
+                                <span class="etiqueta">JavaScript</span>
+                                <span class="etiqueta">DOM</span>
+                            </div>
+                        </div>
+                        <span class="repositorio-link" aria-label="Abrir repositório">
+                            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+
+                    <a href="https://github.com/Japamt-14/algoritmos" target="_blank" rel="noopener noreferrer" class="item-repositorio animar-entrada">
+                        <div class="repositorio-icone">
+                            <i class="bi bi-terminal" aria-hidden="true"></i>
+                        </div>
+                        <div class="repositorio-informacoes">
+                            <h3>Lógica de Programação e Algoritmos</h3>
+                            <p>Práticas de raciocínio lógico, estruturas condicionais e algoritmos em Portugol.</p>
+                            <div class="lista-etiquetas">
+                                <span class="etiqueta">Portugol</span>
+                                <span class="etiqueta">Algoritmos</span>
+                            </div>
+                        </div>
+                        <span class="repositorio-link" aria-label="Abrir repositório">
+                            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <a href="https://github.com/Japamt-14" target="_blank" rel="noopener noreferrer" class="link-todos-repositorios animar-entrada">
+                    Explorar todos os repositórios
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contato sem formulário -->
+        <section class="secao secao-contato" id="contato" aria-labelledby="titulo-contato">
+            <div class="conteiner">
+                <div class="contato-cabecalho animar-entrada">
+                    <span class="numero-secao">06 / CONEXÕES</span>
+                    <span class="contato-caractere" lang="ja" aria-label="Encontro">縁</span>
+                    <h2 id="titulo-contato">Vamos <span class="texto-destaque">conversar?</span></h2>
+                    <p>
+                        Estou aberto a trocar ideias, compartilhar aprendizados e conhecer
+                        pessoas que também gostam de tecnologia. Vamos nos conectar!
+                    </p>
+                </div>
+
+                <div class="grade-contatos">
+                    <a href="mailto:enzopereira1014@gmail.com" class="cartao-contato contato-email animar-entrada">
+                        <span class="contato-icone"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+                        <span class="contato-textos">
+                            <strong>E-mail</strong>
+                            <small>Envie uma mensagem</small>
+                            <span class="contato-endereco">enzopereira1014@gmail.com</span>
+                        </span>
+                        <i class="bi bi-arrow-up-right contato-seta" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://github.com/Japamt-14" target="_blank" rel="noopener noreferrer" class="cartao-contato contato-github animar-entrada">
+                        <span class="contato-icone"><i class="bi bi-github" aria-hidden="true"></i></span>
+                        <span class="contato-textos">
+                            <strong>GitHub</strong>
+                            <small>Conheça meus projetos</small>
+                            <span class="contato-endereco">@Japamt-14</span>
+                        </span>
+                        <i class="bi bi-arrow-up-right contato-seta" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="contato-frase animar-entrada">
+                    <span class="linha-decorativa"></span>
+                    <p>O próximo passo começa com uma conexão.</p>
+                    <span class="linha-decorativa"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="conteiner rodape-conteudo">
+            <a href="#inicio" class="logotipo rodape-logotipo" aria-label="Voltar ao início">
+                <span class="logotipo-simbolo">E<span>P</span></span>
+                <span class="logotipo-texto">ENZO PEREIRA<span class="logotipo-ponto">.</span></span>
+            </a>
+
+            <p class="rodape-direitos">
+                Copyright © <span id="ano-atual">2026</span> Enzo Pereira.
+                Todos os direitos reservados.
+            </p>
+
+            <p class="rodape-assinatura">
+                Desenvolvido com <i class="bi bi-heart-fill" aria-label="amor" role="img"></i> por Enzo Pereira
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante para voltar ao topo -->
+    <button
+        class="botao-topo"
+        id="botao-topo"
+        type="button"
+        aria-label="Voltar ao topo"
+        title="Voltar ao topo">
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+    </button>
+</body>
+</html>
